@@ -9,5 +9,6 @@ jobs:
     uses: ./.github/workflows/build-docker.yml
     with:
       image_name: my-app
-      image_tag: $(git rev-parse --short HEAD)
+      image_tag: ${{ github.sha }}
+      # image_tag: $(git rev-parse --short HEAD)
       
