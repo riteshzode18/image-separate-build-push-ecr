@@ -9,7 +9,7 @@ on:
       image_tag:
         required: false
         type: string
-        default: git rev-parse --short HEAD
+        default: $(git rev-parse --short HEAD)
 jobs:
   build:
     runs-on: ubuntu-latest
