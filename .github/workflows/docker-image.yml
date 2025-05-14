@@ -1,0 +1,11 @@
+name: Resuable workflow -- build and push to ECR
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/build-docker.yml
+    with:
+      image_name: my-app
