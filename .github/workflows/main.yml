@@ -9,5 +9,5 @@ jobs:
     uses: ./.github/workflows/build-docker.yml
     with:
       image_name: my-app
-      image_tag: test
+      image_tag: ${{ github.sha }}
       
