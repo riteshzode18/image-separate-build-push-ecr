@@ -10,3 +10,4 @@ jobs:
     with:
       image_name: my-app
       image_tag: ${{ github.sha }}
+      
